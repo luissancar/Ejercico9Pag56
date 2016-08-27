@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         et1=(EditText)findViewById(R.id.editText);
         a=(int) (Math.random()*10001);
-        Toast.makeText(MainActivity.this, String.valueOf(a), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, String.valueOf(a), Toast.LENGTH_LONG).show();
     }
     public void pulsado(View view){
         if (a==Integer.parseInt(et1.getText().toString()))
-            Toast.makeText(MainActivity.this, "correcto", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "correcto", Toast.LENGTH_LONG).show();
         else
-            Toast.makeText(MainActivity.this, "mal", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "mal", Toast.LENGTH_LONG).show();
 
     }
 }
